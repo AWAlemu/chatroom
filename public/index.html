@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatroom</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="chat-box">
+	    <div id="heading">
+	    	<h4 id="header">AM - Alex Messenger</h4>
+	    	<div id="users">
+	    		<div>
+	    			<i class="fa fa-users fa-2x" aria-hidden="true"></i>
+	    		</div>
+	    		<div id="numUsers">
+	    			<span id="number"></span>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="messages"></div>
+	    <input id="input" type="text" placeholder="Type Message" />
+    <div>
+    
+    
+    
+    <script src="//code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -8,6 +8,22 @@ app.use(express.static('public'));
 var server = http.Server(app);
 var io = socket_io(server);
 
+app.get('/threedcart', function(req, res) {
+    console.log('/threedcart route called');
+    return res.status(200).json({
+          success: true,
+          "PostBackURL" : "http://app.skulabs.com"
+        });
+});
+
+app.post('/threedcart', function(req, res) {
+    console.log('/threedcart route called');
+    return res.status(200).json({
+          success: true,
+          "PostBackURL" : "http://app.skulabs.com"
+        });
+});
+
 var messageThread = [];
 var usersCounter = 0;
 io.on('connection', function(socket) {
